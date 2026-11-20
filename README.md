@@ -1,59 +1,70 @@
-# SpaceShooter
+# Space Shooter
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.1.3.
+A 3D space shooter game built with Angular and Babylon.js. Fly through a realistic solar system, shoot lasers, and battle enemy spaceships with dynamic explosions and visual effects.
 
-## Development server
+## Features
 
-To start a local development server, run:
+- Realistic solar system with proportional planet sizes and distances
+- Glowing Sun and starfield background
+- Player spaceship with WASD + mouse controls and crosshair
+- Laser shooting with glowing effect
+- Enemies with random spaceship textures
+- Explosive enemy destruction with fragment effects
+- Collision detection (enemies, planets, fragments, lasers)
+- Responsive design, runs in browser
 
+## Getting Started
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/)
+- [Angular CLI](https://angular.io/cli)
+
+### Installation
+
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/your-username/space-shooter.git
+    cd space-shooter
+    ```
+
+2. Install dependencies:
+    ```bash
+    npm install
+    ```
+
+### Running the Development Server
+
+Start the local server:
 ```bash
 ng serve
 ```
+Open your browser at [http://localhost:4200/](http://localhost:4200/).
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
+### Building for Production
 
 ```bash
 ng build
 ```
+Build artifacts will be stored in the `dist/` directory.
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+## Controls
 
-## Running unit tests
+- **W/A/S/D**: Move forward/left/back/right
+- **Space / Shift**: Move up/down
+- **Mouse**: Look around
+- **Left Click**: Shoot laser
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+## Assets
 
-```bash
-ng test
-```
+- Planet textures: `src/assets/textures/planets/`
+- Spaceship textures: `src/assets/textures/spaceships/`
+- Starfield and effects generated at runtime
 
-## Running end-to-end tests
+## License
 
-For end-to-end (e2e) testing, run:
+This project uses open-source assets. See individual asset folders for licenses.
 
-```bash
-ng e2e
-```
+---
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Made with [Angular](https://angular.io/) and [Babylon.js](https://www.babylonjs.com/).
